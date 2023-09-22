@@ -37,6 +37,8 @@ spec:
       port: 6832
       protocol: UDP
       targetPort: 6832
+  externalIPs:
+    - 1.2.4.115
   selector:
     io.kompose.service: jaeger
 status:
