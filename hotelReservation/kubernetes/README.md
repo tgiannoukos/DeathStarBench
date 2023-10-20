@@ -44,3 +44,10 @@ cd ../hotelReservation/
 ../wrk2/wrk -D exp -t 2 -c 2 -d 30 -L -s ./wrk2/scripts/hotel-reservation/mixed-workload_type_1.lua http://1.2.4.114:5000 -R 2
 
 ```
+
+
+### View Jaeger traces
+
+Use `ssh -L 9090:1.2.4.115:16686 username@host` to connect to the host using ssh tunneling.
+
+View Jaeger traces by accessing `http://localhost:9090/`
