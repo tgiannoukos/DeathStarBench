@@ -17,5 +17,10 @@ spec:
   {{- end}}
   selector:
     service: {{ .Values.name }}
-
+  {{- if .Values.externalIPs }}
+  externalIPs:
+    {{- range .Values.externalIPs }}
+    - {{ . }}
+    {{- end }}
+  {{- end }}
 {{- end }}

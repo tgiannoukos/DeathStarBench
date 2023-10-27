@@ -4,6 +4,9 @@ ports:
   - port: 8080
     targetPort: 8080
 
+externalIPs:
+  - 1.2.4.116
+
 container:
   image: yg397/openresty-thrift
   imageVersion: xenial
