@@ -19,6 +19,8 @@ ports:
   - port: 9411
     targetPort: 9411
 
+externalIPs:
+  - 1.2.4.115
 
 container:
   env: 
