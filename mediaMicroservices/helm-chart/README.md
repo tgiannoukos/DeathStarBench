@@ -6,7 +6,7 @@
 ##### Template
 ```bash
 cd <path-of-repo>/socialNetwork
-./wrk -D exp -t <num-threads> -c <num-conns> -d <duration> -L -s ./wrk2/scripts/hotel-reservation/mixed-workload_type_1.lua http://<external-ip-address>:5000 -R <reqs-per-sec>
+../wrk2/wrk -D exp -t <num-threads> -c <num-conns> -d <duration> -L -s ./wrk2/scripts/social-network/compose-post.lua http://localhost:8080/wrk2-api/post/compose -R <reqs-per-sec>
 ```
 
 ##### Example
