@@ -15,6 +15,7 @@ git clone https://github.com/tgiannoukos/DeathStarBench.git
 cd DeathStarBench/wrk2/
 make all
 cd ../socialNetwork/
+python3 scripts/init_social_graph.py --graph=socfb-Reed98
 helm install social helm-chart/socialnetwork/
 
 ../wrk2/wrk -D exp -t 100 -c 100 -d 7 -L -s ./wrk2/scripts/social-network/compose-post.lua http://1.2.4.116:8080/wrk2-api/post/compose -R 1000
